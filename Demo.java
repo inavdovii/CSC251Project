@@ -108,6 +108,17 @@ public class Demo
          System.out.println("Something went wrong reading the file: " + ex.getMessage());
       }
       
+        PolicyHolder alice = new PolicyHolder("Alice", "Jones", 20, true, 65.0, 110.0, 18.30);
+        Policy policy1 = new Policy(3450, "State Farm", alice, 700.00);
+
+        // Create additional PolicyHolders and Policies as needed
+
+        System.out.println(policy1);
+        // Call toString method for each Policy object
+
+        System.out.println("There were " + Policy.getNumOfPolicies() + " Policy objects created.");
+        // Output number of Policy objects
+      
    } //close main
    
 } //close the class container
